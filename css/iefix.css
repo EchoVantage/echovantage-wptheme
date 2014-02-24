@@ -1,0 +1,21 @@
+
+.full {
+	width: 960px;
+}
+
+.otherblog {display: none;}
+
+header nav ul {width: 960px;}
+
+
+#newsletter {
+	position: absolute;
+	right: 0;
+	width: 225px;
+	padding: 10px 15px;
+}
+
+#newsletter input {
+	width: 200px;
+	display: block;
+}

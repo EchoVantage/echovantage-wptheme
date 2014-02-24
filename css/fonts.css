@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'LintelRegular';
+    src: url('../fonts/lintel-regular-webfont.eot');
+    src: url('../fonts/lintel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lintel-regular-webfont.woff') format('woff'),
+         url('../fonts/lintel-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lintel-regular-webfont.svg#LintelRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'OstrichSansBlack';
+    src: url('../fonts/ostrichsans-black-webfont.eot');
+    src: url('../fonts/ostrichsans-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrichsans-black-webfont.woff') format('woff'),
+         url('../fonts/ostrichsans-black-webfont.ttf') format('truetype'),
+         url('../fonts/ostrichsans-black-webfont.svg#OstrichSansBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'OstrichSansBold';
+    src: url('../fonts/ostrichsans-bold-webfont.eot');
+    src: url('../fonts/ostrichsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrichsans-bold-webfont.woff') format('woff'),
+         url('../fonts/ostrichsans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ostrichsans-bold-webfont.svg#OstrichSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'OstrichSansLight';
+    src: url('../fonts/ostrichsans-light-webfont.eot');
+    src: url('../fonts/ostrichsans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrichsans-light-webfont.woff') format('woff'),
+         url('../fonts/ostrichsans-light-webfont.ttf') format('truetype'),
+         url('../fonts/ostrichsans-light-webfont.svg#OstrichSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'OstrichSansMedium';
+    src: url('../fonts/ostrichsans-medium-webfont.eot');
+    src: url('../fonts/ostrichsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrichsans-medium-webfont.woff') format('woff'),
+         url('../fonts/ostrichsans-medium-webfont.ttf') format('truetype'),
+         url('../fonts/ostrichsans-medium-webfont.svg#OstrichSansMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

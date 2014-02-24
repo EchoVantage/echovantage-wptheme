@@ -1,0 +1,278 @@
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||
+||||||||||||||||RESPONSIVE STYLE SHEET|||||||||||||||||
+||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+/*================================================================================================*/
+/* ==================================== MEDIQ QUERIES ============================================== */
+
+/*--------------------------------------------------------------------------*/
+/* iPad */
+@media (max-width: 850px) {
+
+	header section.three-fourth a {
+		font: 16px "OstrichSansMedium", sans-serif;
+		line-height: 1;
+	}
+
+}
+
+/* inbetween */
+@media (max-width: 750px) {
+
+	/* footer */
+	footer h1 { 
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	#contact {margin-top: 0;}
+		
+	footer section.two-third, footer section.third, #contact input.quarter, #contact select.quarter, footer input, footer select, footer textarea, footer div, footer div.quarter {
+		width: 100%;
+	}
+	
+	#contact input.quarter, footer div.quarter {
+		margin-bottom: 15px;
+	}
+	
+	footer input.bnt-clear {text-align: center;}
+	
+	#newsletter {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: auto;
+		right: 0;
+		top: auto;
+	}
+
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+/* small tablet mobile */
+@media (max-width: 650px) {
+
+	/* header */
+	
+	header li.quarter {
+		padding: 5px 0;
+		width: 100%;
+	}
+	
+	header li.quarter a {
+		height: 50px;
+		display: inline-block;
+	}
+	
+	header li.quarter a img {
+		height: 100%;
+	}
+
+	header section.three-fourth {
+		width: 100%;
+		text-align: center;
+	}	
+	
+	header section.three-fourth a {
+		font: 18px "OstrichSansMedium", sans-serif;
+		line-height: 0;
+	}
+	
+
+	
+	/* general rules */
+	p.medium, h4.medium, .offerings-col h4 a {
+		font-size: 18px;
+		word-break: auto;
+	}
+
+	p, a, #offerings-post p.meta a {
+		font-size: 14px;
+	}
+
+	/* offerings-col */
+	.offerings-col h4 {
+		font-size: 18px;
+	}
+	
+	.offerings-col a.noflicker {
+		width: 100%;
+	}
+	
+	/* offering-post */
+	#offerings-post article {
+		text-align: center;
+	}
+
+	#offerings-post img.featuredimg {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	
+	#offerings-post .offeringtxt {
+		position: relative;
+		width: 100%;
+		margin: 105% auto 0;
+		text-align: left;
+	}
+
+	#offerings-post .offeringtxt h1, #offerings-post .offeringtxt h2, #offerings-post .offeringtxt h3 {
+		text-align: center;
+	}
+
+	/* philosophy post */
+	#philosophy article {
+		width: 100%;
+	}
+
+	#philosophy article section.two-third {
+		width: 61.077%
+		margin: 0;
+		vertical-align: middle;
+	}
+	
+	#philosophy img {
+		width: 18%;
+		vertical-align: middle;
+	}
+
+	/* blog-post */
+	.blog-article {
+		text-align: center;
+	}
+
+	.blog-article img {
+		width: 100%;
+		margin: 0 0 20px;
+		float: none;
+	}
+
+	.blog-article section {
+		clear: both;
+		width: 100%;
+		text-align: left;
+	}
+	
+	/* SINGLE - blog post */
+	.single .blog-single article.two-third, .single .blog-single section.third {
+		width: 100%;
+	}
+	
+	.single .blog-single article.two-third {
+		margin-bottom: 25px;
+	}
+
+	.single .blog-single h1 {
+		font-size: 30px;
+	}
+
+	.single .blog-single section.third h2 {
+		text-align: center;
+	}
+	
+	.single .blog-single section.third article {
+		width: 47.0769230769%;
+		float: left;
+		clear: none;
+		margin: 0 3.84615384615% 0 0;
+	}
+	
+	.single .blog-single section.third article.last-child {
+		margin-right: 0;
+	}
+
+	/* 404 page */
+	a.errorlink {
+		min-height: 85px;
+	}
+	
+	a.errorlink p {
+		font-size: 16px;
+		margin-left: 13%;
+	}
+	
+	
+}
+
+
+/*--------------------------------------------------------------------------*/
+/* landscape mobile */
+@media (max-width: 550px) {
+
+	/* mobile nav */
+	header, header nav {min-height: 40px;}
+	
+	header nav ul {margin-top: 0;}
+	
+	header section.three-fourth {display: none;}
+	
+	header nav ul section.three-fourth li {
+		width: 100%;
+		clear: both;
+		margin: -1px 0px 0px;
+		border-bottom: 1px solid #b8b8b8;
+		border-top: 1px solid #b8b8b8;
+		
+		transition: all 0.25s linear;
+		-moz-transition: all 0.25s linear;
+		-webkit-transition: all 0.25s linear;
+		-o-transition: all 0.25s linear;
+	}
+	
+	header nav ul section.three-fourth li:hover { background: #b8b8b8; }
+	header nav ul section.three-fourth li:hover a { color: #f5f5f5; }
+	
+	header nav ul section.three-fourth li a {
+		font-size: 40px;
+		display: block;
+		padding: 10px 0px;
+		line-height: .85;
+	}
+	
+	header .menu {display: block;}
+
+
+	/* offerings-col */
+	.offerings-col .offeringtxt {
+		display: block;
+	}
+
+
+
+
+
+}
+
+
+/*--------------------------------------------------------------------------*/
+/* portrait mobile */
+@media (max-width: 470px) {
+	
+
+
+}
+
+
+/*--------------------------------------------------------------------------*/
+/* super small extra */
+@media (max-width: 325px) {
+
+	/* footer social */
+	footer h1 { width: 100%; }
+	.footer-social article { width: 75%; margin: 0 auto 10px; float: none; overflow: hidden; }
+
+}
+
+
+
+
+
