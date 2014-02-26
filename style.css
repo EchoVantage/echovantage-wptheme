@@ -911,7 +911,7 @@ input.bnt-submit:hover {
 	background: #fabe50;
     box-sizing: border-box;
 	-moz-box-sizing:border-box;
-	z-index: 100;
+	z-index: 99;
 }
 
 #newsletter:after {
