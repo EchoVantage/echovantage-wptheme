@@ -46,8 +46,7 @@
 				<!-- Post Text -->
 				<section class="two-third last-child">
 					<a class="noflicker" href="<?php echo the_permalink(); ?>" title="<?php echo the_title(); ?>"><h2><?php echo the_title(); ?></h2></a>
-					<p><?php echo substr( strip_tags( get_the_content(), '<a>' ), 0, 800 ); //shortens content to # of characters. ?></p>
-					<a class="noflicker" href="<?php echo the_permalink(); ?>" title="<?php echo the_title(); ?>">[ Read More ]</a>
+					<p><?php $thecontent = str_replace("&nbsp;", '<br>', get_the_content() );  echo strip_tags( $thecontent, '<br><a>' ); //shortens content to # of characters. ?></p>
 				</section>
 			</article>
 	

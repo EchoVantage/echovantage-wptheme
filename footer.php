@@ -1,6 +1,6 @@
 <a href="#mama-wrapper" title="Back to Top">Back to Top</a>
 <footer class="fullwidth">
-	<section class="full">
+	<section class="full overflowshow">
 		<!-- Contact Form -->
 		<section id="contact" class="two-third">
 			<section class="fullwidth footer-social">

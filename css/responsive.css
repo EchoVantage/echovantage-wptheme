@@ -30,11 +30,11 @@
 	
 	#contact {margin-top: 0;}
 		
-	footer section.two-third, footer section.third, #contact input.quarter, #contact select.quarter, footer input, footer select, footer textarea, footer div, footer div.quarter {
+	footer section.two-third, footer section.third, #contact input.quarter, #contact select.quarter, #contact input.three-fourth, .your-city, footer input, footer select, footer textarea, footer div, footer div.quarter {
 		width: 100%;
 	}
 	
-	#contact input.quarter, footer div.quarter {
+	#contact input.quarter, footer div.quarter, #contact input.three-fourth, .your-city {
 		margin-bottom: 15px;
 	}
 	
@@ -163,32 +163,19 @@
 	}
 	
 	/* SINGLE - blog post */
-	.single .blog-single article.two-third, .single .blog-single section.third {
+	.singlecontent, .otherblog {
 		width: 100%;
 	}
-	
-	.single .blog-single article.two-third {
-		margin-bottom: 25px;
+
+	.singlecontent:after {
+		border: none;
 	}
 
-	.single .blog-single h1 {
-		font-size: 30px;
+	.blog-article img {
+		margin: 0;
 	}
+	
 
-	.single .blog-single section.third h2 {
-		text-align: center;
-	}
-	
-	.single .blog-single section.third article {
-		width: 47.0769230769%;
-		float: left;
-		clear: none;
-		margin: 0 3.84615384615% 0 0;
-	}
-	
-	.single .blog-single section.third article.last-child {
-		margin-right: 0;
-	}
 
 	/* 404 page */
 	a.errorlink {
@@ -268,7 +255,7 @@
 
 	/* footer social */
 	footer h1 { width: 100%; }
-	.footer-social article { width: 75%; margin: 0 auto 10px; float: none; overflow: hidden; }
+	.footer-social article { width: 75%; margin: 0 auto 10px; float: none; overflow: hidden; clear: both; }
 
 }
 

@@ -24,7 +24,7 @@
 			'phone'		=> get_post_meta( $post->ID, 'echov_sitephonenumber', true),
 			'email' 	=> get_post_meta( $post->ID, 'echov_siteemail', true),
 			'philocontent' 	=> get_post_meta( $post->ID, 'echov_philosophy', true),
-			'maincontent'	=> strip_tags( get_the_content(), '<a><span>' )
+			'maincontent'	=> strip_tags( get_the_content(), '<a><span><p>' )
 		);
 	endwhile; wp_reset_query();
 ?>		

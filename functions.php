@@ -14,11 +14,11 @@ add_image_size('philoicon', 85, 80, true);
 add_image_size('blogthumb', 400, 250, true);
 add_image_size('offeringthumb', 500, 500, true);
 
+function filter_ptags_on_images($content){
+   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
 
-// REMOVES P TAGS FROM THE FOLLOWING -------------------------------------//
-remove_filter( 'get_the_content', 'wpautop' );
-remove_filter( 'the_content', 'wpautop' );
-remove_filter( 'the_excerpt', 'wpautop' );
+add_filter('the_content', 'filter_ptags_on_images');
 
 // INCLUDES META-BOX.PHP -------------------------------------------------//
 require_once(dirname(__FILE__) . '/custom-metaboxes/meta-box.php');

@@ -59,48 +59,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</li>
 			
 			<section class="three-fourth last-child menu-links">
-					<li>
-						<a href="<?php echo bloginfo('url'); ?>/#offerings" title="<?php echo bloginfo('name').' Offerings'; ?>" >
-							Offerings
-						</a>
-					</li>
-
-					<li>
-						<a href="<?php echo bloginfo('url'); ?>/#paid-search" title="<?php echo bloginfo('name').' Paid Search'; ?>" >
-							Paid Search
-						</a>
-					</li>
-
-					<li>
-						<a href="<?php echo bloginfo('url'); ?>/#analytics-consulting" title="<?php echo bloginfo('name').' Analytics Consulting'; ?>" >
-							Analytics Consulting
-						</a>
-					</li>
-
-					<li>
-						<a href="<?php echo bloginfo('url'); ?>/#analytics-training" title="<?php echo bloginfo('name').' Analytics Training'; ?>" >
-							Analytics Training
-						</a>
-					</li>
-
-					<li>
-						<a href="<?php echo bloginfo('url'); ?>/#philosophy" title="<?php echo bloginfo('name').'Philosophy'; ?>" >
-							Philosophy
-						</a>
-					</li>
-
-					<li>
-						<a href="<?php echo bloginfo('url'); ?>/#blog" title="<?php echo bloginfo('name').'Blog'; ?>" >
-							Blog
-						</a>
-					</li>
-
-					<li class="last-child">
-						<a href="<?php echo bloginfo('url'); ?>/#contact" title="<?php echo bloginfo('name').'Contact'; ?>" >
-							Contact
-						</a>
-					</li>
-
+					<?php wp_nav_menu( array( 'items_wrap' => '%3$s' ) ); ?>
 			</section>
 		</ul>
 		<div class="menu" onclick="return false"></div>
@@ -150,7 +109,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <?php endwhile; }; ?>
-
 
 
 

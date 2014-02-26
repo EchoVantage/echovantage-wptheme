@@ -8,20 +8,20 @@
 <section  id="blog" class="fullwidth colorSection">
 	<section class="blog-single full">
 		<!-- Post article -->
-		<article class="two-third">
+		<article class="three-fourth singlecontent">
 			<?php 
 			//echo out single post information
 			while (have_posts()) : the_post();
 				$pageID = get_the_ID();
 				echo '<h1>'.get_the_title().'</h1>';
-				$content = '<p class="full">'.get_the_content().'</p>';
+				echo '<h4 class="pub-time">Published on ' . get_the_date() . '</h4>';
+				echo the_content();
 			
-				echo str_replace('&nbsp;', '<br><br>', $content);
 			endwhile; wp_reset_query(); ?>
 		</article>
 		
 		<!-- other blog post -->
-		<section class="otherblog third last-child">
+		<section class="otherblog quarter last-child">
 			<h2>Other Blog Post</h2>
 			<?php
 				$counter = 1;
@@ -52,6 +52,7 @@
 			?>
 		
 				<!--Post Content -->
+				<a class="noflicker" href="<?php echo the_permalink(); ?>" title="<?php echo the_title(); ?>"><?php echo $title; ?></a>
 				<article id="<?php echo $blogSlug; ?>" class="full blog-article <?php echo $lastchild; ?>">			
 					<!-- Post Image -->
 					<a class="noflicker" href="<?php echo the_permalink(); ?>" title="<?php echo the_title(); ?>">
