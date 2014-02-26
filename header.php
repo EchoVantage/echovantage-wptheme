@@ -4,7 +4,14 @@
 
 	<!-- Echo Vantage -->
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
-	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+	<title><?php
+		wp_title( '|', true, 'right' );
+		bloginfo( 'name' );
+		$site_description = get_bloginfo( 'description', 'display' );
+		if ( $site_description && ( is_front_page() ) ) {
+			echo " | $site_description";
+		}
+	?></title>
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
